@@ -1,0 +1,64 @@
+
+<section >
+    <div class="r-container">
+
+            <div class="r-imgBox"> </div>
+            <div class="r-contentBox">
+                
+                <div class="r-formBox">
+                        <h2>Register</h2>
+    
+                        <form [formGroup]="users" (ngSubmit)=" submitForm()">
+            
+                            <div class="r-inputBox">
+                                <span>First name</span>
+                                <input type="text" formControlName="first_name">
+                            </div>
+            
+                            <div class="r-inputBox" >
+                                <span>Last name</span>
+                                <input type="text" formControlName="last_name">
+                            </div>
+            
+                            <div class="r-inputBox" >
+                                <span>E-mail</span>
+                                <input type="email" formControlName="email">
+                            </div>
+            
+                            <div class="r-inputBox">
+                                <span>Password</span>
+                                <input type="password" formControlName="password">
+                            </div>
+            
+                            <div class="r-inputBox">
+                                    <span>Confirm Password</span>
+                                    <input type="password" formControlName="confirmPassword">
+                            </div>
+            
+                        
+            
+                            <div class="r-inputBox">
+                                    
+                                    <input type="submit" value="Register" >
+                            </div>
+                            <div class="r-inputBox">
+                                    
+                                    <p>Do you have an account? <a routerLink="/login" (click)="Login()">Log in</a></p>
+                            </div>
+                        </form>
+            
+                </div>
+            </div>
+    </div>
+   
+<!-- Modal box -->
+<div class="m-container">
+
+        <div class="popup" id="popup">
+                <img src="" a>
+                <h2></h2>
+                <p></p>
+                <button type="button" class="m-btn" >OK</button>
+            </div>
+</div>
+</section>

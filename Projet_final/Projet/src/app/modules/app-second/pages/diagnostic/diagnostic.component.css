@@ -1,0 +1,114 @@
+section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100hv;
+    background: whitesmoke;
+}
+.d-container{
+    
+    width: 95%;
+    margin: 40px auto;
+    height: 500px;
+}
+
+.d-container .row{
+    
+    width: 98%;
+    margin:7px auto;
+    height: 480px;
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+}
+
+.d-container .row .column{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: line;
+}
+
+.d-container .row .column .screen{
+    border: solid gainsboro;
+    background:  #333;
+    background-size:cover;
+    background-position: center;
+    width: 75%;
+    height: 400px;
+    border-top-left-radius: 5px;
+}
+.d-container .row .column .btns{
+    background: gray;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.d-container .row .column .btns .choice input[type="file"] {
+    display: none;
+}
+.upload-label{
+    position: relative;
+    margin-top: 60px;
+    margin-left: 47px;
+    margin-right: 20px;
+     padding: 12px 20px;
+     background: #333;
+     color: #fff;
+     font-size: 1rem;
+     transition: all .4s;
+     cursor: pointer;
+}
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4; 
+}
+.d-container .row .column .btns .prediction{
+   
+    margin-left: 35px;
+    margin-right: 20px;
+    padding: 5px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgb(94, 94, 240);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.d-container .row .column .btns .prediction:hover{ background-color: rgb(135, 135, 231)}
+.d-container .row .column .btns .prediction:active{
+    background-color: rgb(41, 41, 223);
+    box-shadow: 0 5px rgb(63, 63, 182);
+    transform: translateY(4px);
+    }
+.d-container .row  #result-container{
+    position: relative;
+    width: 78%;
+    background: #333;
+}
+#result{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.d-container .row  #result-container .loader{
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+ 
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

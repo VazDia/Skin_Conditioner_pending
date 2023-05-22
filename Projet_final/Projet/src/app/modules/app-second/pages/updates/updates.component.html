@@ -1,0 +1,38 @@
+<section>
+    <div class="container">
+            <div class="header">
+                <h1>MODIFICATIONS</h1>
+                </div>
+                <div class="body">
+                        <form [formGroup]="user" (ngSubmit)="Modification()">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text"  formControlName="first_name"> 
+                                <br><br>
+
+                                <label for="first_name">LAST NAME</label>
+                                <input type="text" formControlName="last_name">
+                                <br><br>
+                                <label for="first_name">EMAIL</label>
+                                <input type="text" formControlName="email"> 
+                                <br><br>
+                                <h2>Password</h2>
+                                <hr>
+                                <hr>
+                                <label for="first_name">OLD PASSWORD</label>
+                                <input type="password"  formControlName="password">
+                                <br><br>
+
+                                <label for="first_name"  >NEW PASSWORD</label>
+                                <input type="password" formControlName="confirmPassword">
+                                <input type="submit" value="Save">
+
+                     </form>
+                </div>
+                <div class="footer">
+            
+                </div>
+
+    </div>
+    
+   
+</section>

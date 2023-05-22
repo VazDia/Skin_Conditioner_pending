@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+}
+section{
+    min-height: 100vh;
+}
+
+section .container{
+    width: 75%;
+    height: 650px;
+    margin: auto;
+    border: solid 1px #333;
+}
+
+section .header{
+    border: solid red 1px;
+    height: 60px;
+    text-align: center;
+
+}
+section .body{
+    border: solid blue 1px;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+section .body form{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+ hr{
+   color: rgb(59, 90, 59);
+}
+section .body form input[type='text'], 
+section .body form input[type='password'],
+section .body form input[type='email']
+{
+    width: 100%;
+    padding: 2px 15px;
+    text-align: center;
+    color:#333;
+}
+section .body form input[type='submit']{
+    position: relative;
+    margin-top: 15px;
+    width:70%;
+    left: 100px;
+    padding: 8px;
+  
+
+}
+section .footer{
+    border: solid green 1px;
+    height: 20px;
+}

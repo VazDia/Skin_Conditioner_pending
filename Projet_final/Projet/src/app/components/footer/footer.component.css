@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Golos+Text:wght@400;500&family=Nunito:wght@800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    font-family: "Roboto", sans-serif;
+    background: rgb(59, 90, 59);
+    background-size: cover;
+    position: sticky;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+footer li{
+    list-style: none;
+    display:inline-block;
+    margin: 10px;
+}
+
+.footer-icons a{
+    background: rgb(35, 80, 80);
+    color: #272727;
+    padding:15px;
+    border-radius:100px;
+    display:flex;
+    font-size:25px;
+}
+.footer-icons a:hover{
+    color:#fff;
+}
+
+.footer-menu a{
+    color: #fff;
+}
+
+.footer-menu a:hover{
+    color: rgb(137, 69, 163);
+}
+
+.footer-copyright{
+    background: whitesmoke;
+    color: #333;
+    padding:15px;
+    margin: 30px;
+}
+
+.footer-copyright p{
+    margin-bottom: 0;
+}

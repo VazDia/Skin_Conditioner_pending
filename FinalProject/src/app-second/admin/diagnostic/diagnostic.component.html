@@ -1,0 +1,29 @@
+
+<section>
+    <div class="d-container">
+        <div class="row">
+            <div class="column" id="board-container">
+                <div class="screen" [style.backgroundImage]="'url(' + imageURL + ')'"></div>
+                <div class="btns">
+                        <div class="choice">
+                                <form id="upload-file" method="post" enctype="multipart/form-data">
+                                    <label for="imageUpload" class="upload-label">
+                                        Add picture...
+                                    </label>
+                                    <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" (change)="readURL($event)">
+                                </form>
+                        </div>
+                    <button class="prediction" (click)="predict()" *ngIf="imageURL">Prediction</button>
+                    <!-- "-->
+                </div>
+
+            </div>
+            <div class="column" id="result-container">
+                <h4 id="result"><span>{{ result }}</span></h4>
+                    
+                    <div class="loader" *ngIf="loading"></div>
+            </div>
+
+        </div>
+    </div>
+</section>

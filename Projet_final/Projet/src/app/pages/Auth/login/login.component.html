@@ -1,0 +1,50 @@
+<section >
+    <div class="r-container">
+
+            <div class="r-imgBox"> </div>
+            <div class="r-contentBox">
+                
+                <div class="r-formBox">
+                        <h2>Login</h2>
+    
+                        <form [formGroup]="user" (ngSubmit)="connexion()" >
+            
+                            
+            
+                            <div class="r-inputBox" >
+                                <span>E-mail</span>
+                                <input type="email" formControlName="email">
+                            </div>
+            
+                            <div class="r-inputBox">
+                                <span>Password</span>
+                                <input type="password" formControlName="password">
+                            </div>
+            
+                        
+            
+                            <div class="r-inputBox">
+                                    
+                                    <input type="submit" >
+                            </div>
+                            <div class="r-inputBox">
+                                    
+                                    <p>Don't you have any account? <a routerLink="/registrer" (click)="Register()">Register</a></p>
+                            </div>
+                        </form>
+            
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal box -->
+<div class="m-container">
+
+    <div class="popup" id="popup">
+            <img src="" a>
+            <h2></h2>
+            <p></p>
+            <button type="button" class="m-btn" (click)="closePopup()">OK</button>
+        </div>
+</div>
+</section>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100hv;
+    background: whitesmoke;
+}
+section h1{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family:  'Golos Text', sans-serif;
+}
+.row{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column{
+    width:30%;
+    border: #fff groove;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+    border-radius: 10px;
+     
+}
+.column img{
+    width:85%;
+    position: relative;
+    left: 30px;
+    top: 2px;
+    height: 45%;
+}
+
+.column .description{
+    position: relative;
+    border:solid white;
+    height: 45%;
+    width: 85%;
+    left: 30px;
+   
+}
+
+.column .description h2{
+    padding: 0 16px;
+    font-family:  'Golos Text', sans-serif;
+}
+
+.column .description p{
+    font-size: 16px;
+    font-weight: 400px;
+    margin-top: 10px;
+}
+
+.column .description button{
+    width: 80%;
+    position: relative;
+    left: 30px;
+    top:10px;
+    padding: 8px;
+    background: #333;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius:8px;
+}
+.column .description button:hover{
+    background: rgb(114, 108, 108);
+    cursor: pointer;
+}

@@ -1,0 +1,68 @@
+<header>
+    <div class="n-logo"><img src="../../../assets/back5.png" > <h1>Skin Conditioner</h1></div>
+    <div class="n-hamburger" (click)="hamburger()">
+        <div class="n-line"></div>
+        <div class="n-line"></div>
+        <div class="n-line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li>
+                <a  class=" option " routerLink="/user/documentation" routerLinkActive="active" (click)="documentation()">Documentation</a>
+                
+            </li>
+            <li>
+                <a  class="option" routerLink="/user/diagnostic" routerLinkActive="active" (click)="diagnostic()">Diagnostic</a>    
+            </li>
+            <li>
+                <a class="option" routerLink="/user/service" routerLinkActive="active" (click)="service()"> Services</a>    
+            </li>
+            <li>
+                <a  class="option" routerLink="/user/archive" routerLinkActive="active" (click)="archive()">Archives</a>    
+            </li>
+
+            <li>
+                <a  class="logout" (click)="openBackDropCustomClass(content)" ><img src="../../../assets/1200px-User_icon_1.svg.png" > </a>    
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- User detail -->
+<ng-template #content let-modal>
+    <div class="popup-container">
+	<div class="modal-header">
+		
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body ">
+        <div class="icon-container">
+                <div class="icon-div"><img src="../../../assets/1200px-User_icon_1.svg.png" ></div>
+                <h2>This is your account's details</h2>
+        </div>
+		<table>
+                <tr >
+                   <td>User ID:</td> <td><h3>{{userDetail.id_user}}</h3></td>
+                    </tr>
+                <tr >
+                <td>FIRST NAME:</td> <td><h3>{{userDetail.first_name}}</h3></td>
+                </tr>
+                <tr>
+                    <td>LAST NAME:</td> <td><h3>{{userDetail.last_name}}</h3></td>
+                </tr>
+                <tr>
+                    <td>EMAIL: </td> <td><h3>{{userDetail.email}}</h3></td>
+                </tr>
+        </table>
+        
+	</div>
+	<div class="modal-footer">
+        <div class="footer-div">
+                <button class="m-update" (click)=" Update()">Update</button>
+                <button class="m-logout" (click)="logout()">Logout </button>
+        </div>
+           
+    </div>
+    </div>
+</ng-template>
+
+<!---->
